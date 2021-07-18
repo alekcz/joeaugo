@@ -13,7 +13,11 @@
         [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge"}]
         [:link {:rel "preconnect" :href "https://fonts.googleapis.com"}]
         [:link {:rel "preconnect" :href "https://fonts.gstatic.com" :crossorigin nil}]
-        [:link {:href "https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&display=swap" :rel "stylesheet"}]
+        [:link {:href "https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&display=swap" :rel "stylesheet"
+                :onload "this.onload=null;this.removeAttribute('media')"
+                :media "print"}]
+        [:noscript
+          [:link {:href "https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&display=swap" :rel "stylesheet"}]]
         [:style 
           (css [:body {:background-color "#fffff4"}])
           (css [:.info { :background-color "rgb(122,144,194)" 
