@@ -52,7 +52,7 @@
               {:style "display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 90vh;"
               :data-null ""}
               [:br][:br]
-              [:img.profile {:src "/profile.jpeg" :width "150px"}]
+              [:img.profile {:src "/profile.jpeg" :width "150px" :height "150px"}]
               [:br][:br]
               [:h2 "In loving memory of"]
               [:h1 "Joe Odhiambo Augo"]
