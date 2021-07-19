@@ -7,7 +7,7 @@
     [:html {:style "font-family: 'Thasadith', sans-serif;text-align: center;"
             :lang "en"}
       [:head 
-        [:title "Joe Odhiambo Augo - In Memoriam"]
+        [:title "Joe Odhiambo - In Memoriam"]
         [:meta {:charset "utf-8"}]
         [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
         [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge"}]
@@ -59,7 +59,7 @@
               [:img.profile {:src "/profile.jpeg" :width "150px" :height "150px"}]
               [:br][:br]
               [:h2 "In loving memory of"]
-              [:h1 "Joe Odhiambo Augo"]
+              [:h1 "Joe Odhiambo"]
               [:h2 "Contribute via EFT"]
               [:div.info
                 [:div.line [:div.strong "Name: "] [:div.details "DCO Owaga"]]
