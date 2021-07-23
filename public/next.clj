@@ -19,7 +19,8 @@
         [:noscript
           [:link {:href "https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&display=swap" :rel "stylesheet"}]]
         [:style 
-          (css [:body {:background-color "#fffff4"}])
+          (css [:html :body {:margin "0px"
+                       :padding "0px"}])
           (css [:.info { :background-color "rgb(122,144,194)" 
                           :font-size "16px"
                           :margin-top "10px"
@@ -36,8 +37,6 @@
                           :font-weight "normal"}])
           (css [:.profile {:border-radius "100%"}])
           (css [:.details {:display "flex"}])
-          (css [:.center {:text-align "center"
-                          :width "100%"}])
           (css [:.line {:display "flex" :margin-bottom "3px"}])
           (css [:h1 {:font-size "40px" :margin-top "0px"}])
           (css [:h2{:font-size "20px" :margin-bottom "0px"}])
@@ -52,8 +51,22 @@
                          :justify-content "center"
                          :align-items "center"
                          :border-radius "8px"
-                         :font-weight "700"}])]]
+                         :font-weight "700"}])
+          (css [:.hero {:background "linear-gradient(130.37deg, #C9DAE2 26.33%, #F1FAFF 71.25%)"
+                          :height "700px"}])
+          (css [:header {:display "flex"
+                         :flex-direction "row"}])]]
       [:body 
+        [:div.hero 
+          [:header 
+            [:div.word-mark "Joe Odhiambo"]
+            [:div.menu "Service"]
+            [:div.menu "Gallery"]
+            [:div.menu "Stories"]
+            [:div.menu "Donate"]
+            [:div.menu "Contribute"]]
+          [:div.subtitle "1961 - 2021"]
+          [:div.]]
         [:div.line 
               {:style "display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 90vh;"
               :data-null ""}
@@ -77,8 +90,8 @@
               [:h2 "Contribute online"]
               [:div.info
                 [:div.line 
-                    [:div.center "Use "
-                    [:a {:href "https://secure.changa.co.ke/myweb/share/48583"} "this link"] " to contribute online."]]]
+                    [:div "Use this link to contribute online: "
+                    [:a {:href "https://secure.changa.co.ke/myweb/share/48583"} "here"]]]]
               [:br]
               [:br]
               [:a.button {:href "https://www.kudoboard.com/boards/Dm8efC7E" :target "_blank"} "Offer condolences"]
