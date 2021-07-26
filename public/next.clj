@@ -46,8 +46,10 @@
                              :margin "12px 0"
                              :text-transform "uppercase"}]
                 [:p {:text-align "left"}]
+                [:.strong {:min-width "130px" :margin-right "20px" :font-weight "700"}]
                 [:h2 {:font-size "54px" :margin-bottom "60px"  :margin-top "0px" :line-height "64px" :color weib :text-align "left"}]
                 [:h3 {:font-size "42px" :margin-bottom "40px"  :margin-top "0px" :line-height "50px" :color weib}]
+                [:h4 {:font-size "20px" :color weib :text-align "left"}]
                 [:span {:margin-bottom "2px"}]
                 [:.word-mark {:text-transform "uppercase"
                               :font-weight "700"}]
@@ -189,6 +191,7 @@
                           :font-weight "600"}]    
                 [:.white {:color white}]
                 [:.no-bot {:margin-bottom "0px"}]                                               
+                [:.thin-bot {:margin-bottom "8px"}]                                               
                 [:footer {:padding "60px 10vw"
                          :display "flex"
                          :flex-direction "column"
@@ -197,7 +200,9 @@
                          :font-weight "bold"
                          :color accent
                          :font-size "18px"}]
-                [:.mobile {:display "none !important"}])
+                [:.mobile {:display "none !important"}]
+                [:div.info {:flex-direction "column"}]
+                [:div.line {:display "flex" :width "100%" :font-size "16px"}])
           (css
             (at-media {:max-width (px 800)}
               [:header {:display "none"}]
@@ -234,7 +239,7 @@
             [:a.menu {:href "#gallery"} "Gallery"]
             [:a.menu {:href "#biography"} "Biography"]
             [:div.filler]
-            [:a.button.primary {:href "https://secure.changa.co.ke/myweb/share/48583"} "Contribute"]]
+            [:a.button.primary {:href "#contribute"} "Contribute"]]
           [:br] 
           [:br] 
           [:br] 
@@ -315,12 +320,26 @@
                 [:p "Joe was a dedicated hockey player\u003B his late brother Sam described him as the best left wing Kenya ever produced. Joe played on the Kenyan national hockey team in the 70s and continued to play exceptionally well in local leagues in South Africa, up to the time of his demise."]
                 [:p "His general interest in all sports was astounding. He was an ardent football and rugby fan and enjoyed physical activities, even competing in a number of marathons."]
                 [:p "Although Joe sang off pitch, he loved Lingala and Luo music and had the latest collection of music stashed all over the house and cars. His favourite musicians were Franco and Musa Juma. He loved \"Nyar Ahero\" song by Musa Jakadala which was played for him until his last day on earth."]]]]
-        [:div.section.section--alt
+        [:div#contribute.section.section--alt
           [:div.subtitle "A helping hand"]
           [:h3.title.playfair "In loving memory"]
           [:div.ctas
             [:a.button.secondary {:href "https://www.kudoboard.com/boards/Dm8efC7E"} "Leave a message"]
-            [:a.button.primary {:href "https://secure.changa.co.ke/myweb/share/48583"} "Make a contribution"]]]
+            [:a.button.primary {:href "https://secure.changa.co.ke/myweb/share/48583"} "Contribute online"]]
+          [:br][:br]
+          [:div.info
+            [:h4.thin-bot "Contribute via EFT"]
+            [:div.line [:div.strong "Name: "] [:div.details "DCO Owaga"][:br]]
+            [:div.line [:div.strong "Bank: "] [:div.details "ABSA"]]
+            [:div.line [:div.strong "Account No: "]  [:div.details "9094613153"]]
+            [:div.line [:div.strong "Branch Code: "]  [:div.details "632005"]]
+            [:div.line [:div.strong "Swift Code: "]  [:div.details "ABSAZAJJ"]]
+            [:div.line [:div.strong "Reference: "] [:div.details "Your Name & Surname"]]]
+          [:div.info
+            [:h4.thin-bot "Contribute via M-pesa"]
+            [:div.line [:div.strong "Mpesa: "] [:div.details "+254798212410"]]
+            [:div.line [:div.strong "Reference: "] [:div.details "Your Name & Surname"]]]
+          [:br][:br]]
         [:footer "1961 - 2021"]]]))
 
 (pcp/response 200 resp "text/html")            
