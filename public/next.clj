@@ -18,6 +18,7 @@
         [:meta {:charset "utf-8"}]
         [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
         [:link {:rel "shortcut icon" :type "image/png" :href "/favicon.png"}]
+        [:meta {:name "description" :content "I'm Alex and I write code."}]
         [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge"}]
         [:link {:rel "preconnect" :href "https://fonts.googleapis.com"}]
         [:link {:rel "preconnect" :href "https://fonts.gstatic.com" :crossorigin nil}]
@@ -128,7 +129,8 @@
                           :flex-direction "column"
                           :justify-content "center"
                           :margin-left "70px"}
-                  [:p {:margin "0px 0px 20px 0px"}]
+                  [:p {:margin "0px 0px 20px 0px"
+                       :font-size "16px"}]
                   [:.subtitle {:font-weight "400"
                                :text-transform "capitalize"}]]
                 [:a.watch {:display "flex"
@@ -157,7 +159,7 @@
                              :background white}]
                 [:.chapter {:display "flex" 
                             :flex-direction "column"
-                            :flex-basis "30%"
+                            :width "37vw"
                             :padding "5px"
                             :margin-bottom "60px"}
                   [:p {:font-size "18px"
@@ -165,7 +167,8 @@
                        :letter-spacing "0.3px"
                        :font-weight "400"}]
                   [:div.subtitle {:font-size "24px"
-                               :margin "0"}]]
+                               :margin "0"}]
+                  [:img {:margin-bottom "20px"}]]
                 [:.gallery {:display "flex"
                              :flex-direction "row"
                              :flex-wrap "wrap"
@@ -183,7 +186,8 @@
                           :background-repeat "no-repeat"}]
                 [:.dates {:color weib
                           :font-weight "600"}]    
-                [:.white {:color white}]                                               
+                [:.white {:color white}]
+                [:.no-bot {:margin-bottom "0px"}]                                               
                 [:footer {:padding "60px 10vw"
                          :display "flex"
                          :flex-direction "column"
@@ -199,8 +203,7 @@
             [:div.filler]
             [:a.menu {:href "#memorials"} "Memorials"]
             [:a.menu {:href "#gallery"} "Gallery"]
-            [:a.menu {:href "#stories"} "Stories"]
-            [:a.menu {:href "https://secure.changa.co.ke/myweb/share/48583"} "Donate"]
+            [:a.menu {:href "#stories"} "Biography"]
             [:div.filler]
             [:a.button.menu.primary {:href "https://secure.changa.co.ke/myweb/share/48583"} "Contribute"]]
           [:br] 
@@ -214,27 +217,38 @@
           [:a.primary.button {:href "https://www.kudoboard.com/boards/Dm8efC7E"} "Leave a message"]
           [:img {:src "img/header.png"}]]
         [:div#memorials.section.section--navy
-          [:h2.title.playfair.white "Memorial services"]
+          [:h2.title.playfair.white.no-bot "Memorial services"]
+          [:p.white "We lovingly remember Joseph Otieno Odhiambo, ja Asembo Kanyikela, to acknowledge and share both our joy in the gift that his life was to us, and the grief that his sudden and unexpected passing brings. Joe, or Joese as he was fondly known, was a pillar of support not only to his family but to the entire clan. He was a kind, gentle, generous and emphatic soul."]
+          [:a.watch {:style "width: 310px;"
+                     :href "/memorial-programme.pdf"} "Download programmes" [:img.play {:style "width: 20px"
+                                                                                                                                          :src "img/download.svg"}]]
+          [:br] 
+          [:br] 
+          [:br] 
           [:div.stream
             [:a {:href "https://www.youtube.com/watch?v=LrNO0UHHDjU&ab_channel=GraphicExposure"}
               [:img {:src "img/stream0.png"}]]
             [:div.aside 
               [:div.subtitle "Pretoria, South Africa (11:00 AM - 26th July 2021)"]
-              [:p.white "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum."]
+              [:p.white "Memorial Service: Grobbelaars Chapel"
+              [:br] "Program Director: Protus Seda"]
               [:a.watch {:href "https://www.youtube.com/watch?v=LrNO0UHHDjU&ab_channel=GraphicExposure"} "Watch Livestream" [:img.play {:src "img/play.svg"}]]]]
           [:div.stream
             [:a {:src "https://www.youtube.com/channel/UCO_CFevOouGCB8E4fnPEBzg"}
               [:img {:src "img/stream1.png"}]]
             [:div.aside  
               [:div.subtitle "Nairobi, Kenya (12:00 PM - 29th July 2021)"]
-              [:p.white "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum."]
+              [:p.white "Memorial Service: All Saints Cathedral"
+              [:br] "Program Director: Max Muniafu"]
               [:a.watch {:href "https://www.youtube.com/watch?v=LrNO0UHHDjU&ab_channel=GraphicExposure"} "Watch Livestream" [:img.play {:src "img/play.svg"}]]]]
           [:div.stream
             [:a {:src "https://www.youtube.com/channel/UCO_CFevOouGCB8E4fnPEBzg"}
               [:img {:src "img/stream2.png"}]]
             [:div.aside  
               [:div.subtitle "Asembo Kanyikela, Kenya (08:30 AM - 31st July 2021)"]
-              [:p.white "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum."]
+              [:p.white "Funeral Service: Asembo Kanyikela (next to Siger School)"
+              [:br] "Master of Ceremony: Saul Sewe"
+              [:br] "Officiating: Anglican Church of Kenya Bondo Diocese"]
               [:a.watch {:href "https://www.youtube.com/watch?v=LrNO0UHHDjU&ab_channel=GraphicExposure"} "Watch Livestream" [:img.play {:src "img/play.svg"}]]]]]
         [:div#gallery.section.section--thin
           [:div.subtitle "Photo Gallery"]
@@ -251,23 +265,25 @@
             [:div.chapter
                 [:img {:src "img/early.png"}]
                 [:div.subtitle "Early life"]
-                [:div.dates "YYYY - YYYY"]
-                [:p "Born on the 24th of August 1961, Joe was the fourth born child of the late Engineer Apollo Odhiambo Augo and the late Mama Grace Nellie Akumu of Asembo Kanyikela."]]
+                [:p "Born on the 24th of August 1961, Joe was the fourth born child of the late Engineer Apollo Odhiambo Augo and the late Mama Grace Nellie Akumu of Asembo Kanyikela."]
+                [:p "He was brother to the late Lt. Col. Sam Odhiambo (Rtd.), Leah Krogsund, the late Ruth Wandia, the late Peter Michael Augo, Roseline Odede, Winnie Stella Anyango and Benjamin Monye."]]
+            [:div.chapter
+                [:img {:src "img/husband.png"}]
+                [:div.subtitle "Husband & Family man"]
+                [:p "Joe married the love of his life, Alice, in 1989. In addition to being a loving husband to her, he was also a fabulous father to their two children Leo and Sally. Joe and his family have been stationed in southern Africa since 1990."]
+                [:p "Joe was son in law to the Late Mahallon Danga and the late Salome Danga of Seme Kopudo. He was a brother in law to Pamela Odhiambo, Lily Odhiambo, Vidar Krogsund, the late Maurice Wandia, Dr Jorry Odede, Cathy Odhiambo, Florence Buziba, David Danga, Mark Danga, Edwin Danga and Josephine Danga."]]
             [:div.chapter
                 [:img {:src "img/professional.png"}]
                 [:div.subtitle "Professional"]
-                [:div.dates "YYYY - YYYY"]
-                [:p "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum."]]
+                [:p "Joe joined University of Nairobi in 1982 for a course in Quantity Surveying. He later pursued various further studies in advanced Project Management and a Masters of Business Administration (MBA) at the University of Pretoria, among other achievements. "]
+                [:p "Joe had an illustrious career\u003B serving as a lecturer at the prestigious Wits and a Project Manager at Sasol, and the Chief Executive Officer at Agrement South Africa. He also took a particular interest in mentoring young graduates and his staff members."]
+                [:p "Joe was an entrepreneur at heart with brilliant business acumen and numerous business interests. His love for farming is evidenced by the many eucalyptus and moringa trees he planted in the ancestral home in Asembo."]]
             [:div.chapter
                 [:img {:src "img/family.png"}]
-                [:div.subtitle "Family"]
-                [:div.dates "YYYY - YYYY"]
-                [:p "Joe married the love of his life, Alice, in 1989. In addition to being  a loving husband to her, he was also a fabulous  father to their two children Leo and Sally. Joe and his family  have been  stationed in southern Africa since 1990."]]
-            [:div.chapter
-                [:img {:src "img/husband.png"}]
-                [:div.subtitle "Husband"]
-                [:div.dates "YYYY - YYYY"]
-                [:p "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum."]]]]
+                [:div.subtitle "Education & Interests"]
+                [:p "Joe was a dedicated hockey player\u003B his late brother Sam described him as the best left wing Kenya ever produced. Joe played on the Kenyan national hockey team in the 70s and continued to play exceptionally well in local leagues in South Africa, up to the time of his demise."]
+                [:p "His general interest in all sports was astounding. He was an ardent football and rugby fan and enjoyed physical activities, even competing in a number of marathons."]
+                [:p "Although Joe sang off pitch, he loved Lingala and Luo music and had the latest collection of music stashed all over the house and cars. His favourite musicians were Franco and Musa Juma. He loved \"Nyar Ahero\" song by Musa Jakadala which was played for him until his last day on earth."]]]]
         [:div.section.section--alt
           [:div.subtitle "A helping hand"]
           [:h3.title.playfair "In loving memory"]
