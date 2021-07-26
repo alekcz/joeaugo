@@ -13,14 +13,13 @@
 
 (def resp 
   (pcp/html
-    [:html {:style "font-family: 'Thasadith', sans-serif;text-align: center;"
-            :lang "en"}
+    [:html 
       [:head 
         [:title "Joe Odhiambo - In Memoriam"]
         [:meta {:charset "utf-8"}]
         [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
         [:link {:rel "shortcut icon" :type "image/png" :href "/favicon.png"}]
-        [:meta {:name "description" :content "I'm Alex and I write code."}]
+        [:meta {:name "description" :content "We lovingly remember Joseph Otieno Odhiambo, ja Asembo Kanyikela, to acknowledge and share both our joy in the gift that his life was to us, and the grief that his sudden and unexpected passing brings."}]
         [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge"}]
         [:link {:rel "preconnect" :href "https://fonts.googleapis.com"}]
         [:link {:rel "preconnect" :href "https://fonts.gstatic.com" :crossorigin nil}]
