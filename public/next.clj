@@ -1,6 +1,8 @@
 (ns index
   (:require [pcp :as pcp]
-            [garden.core :refer [css]]))
+            [garden.core :refer [css]]
+            [garden.stylesheet :refer [at-media]]
+            [garden.units :refer [px]]))
 
 (def accent "#BB973A")
 (def white "#FFFFFF")
@@ -62,7 +64,7 @@
                          :width "37vw"
                          :position "absolute"
                          :bottom "0px"
-                         :right "10vw"}]]
+                         :right "min(10vw, 50px)"}]]
                 [:header {:display "flex"
                          :flex-direction "row"
                          :justify-content "space-between"
@@ -195,7 +197,35 @@
                          :align-items "center"
                          :font-weight "bold"
                          :color accent
-                         :font-size "18px"}])]]
+                         :font-size "18px"}]
+                [:.mobile {:display "none !important"}])
+          (css
+            (at-media {:max-width (px 800)}
+              [:header {:display "none"}]
+              [:h1 {:font-size "30px"}]
+              [:h2 {:font-size "26px"}]
+              [:h3 {:font-size "22px"}]
+              [:.image {:width "70vw" :height "70vw"}]
+              [:.stream {:flex-direction "column"}]
+              [:.ctas {:flex-direction "column" :justify-content "center"}]
+              [:.chapter {:width "80vw"}]
+              [:.secondary {:margin-right "0px" :margin-bottom "20px"}]
+              [:.aside {:margin-left "0"}]
+              [:html :body {:font-size "14px"}]
+              [:.section--family {:background-size "contain"
+                                  :min-height "200px"}] 
+              [:.fade {:padding "0px 00vw 20px 10vw"}]
+              [:a.watch {:width "240px" :font-size "14px"}]
+              [:.hero  {:background "linear-gradient(130.37deg, #C9DAE2 26.33%, #F1FAFF 71.25%)"
+                         :height "600px"
+                         :padding "40px 10vw 60px 10vw"
+                         :justify-content "flex-end"}]
+              [:img.joe {:top "40px"
+                      :width "40vw"
+                      :right "30vw"
+                      :border-radius "100%"}]
+              [:a.message.primary {:display "none"}]
+              [:.mobile {:display "flex"}]))]]
       [:body 
         [:div.hero 
           [:header 
@@ -205,7 +235,7 @@
             [:a.menu {:href "#gallery"} "Gallery"]
             [:a.menu {:href "#biography"} "Biography"]
             [:div.filler]
-            [:a.button.menu.primary {:href "https://secure.changa.co.ke/myweb/share/48583"} "Contribute"]]
+            [:a.button.primary {:href "https://secure.changa.co.ke/myweb/share/48583"} "Contribute"]]
           [:br] 
           [:br] 
           [:br] 
@@ -214,14 +244,16 @@
           [:div.heading 
             [:h1.playfair "In Loving Memory"
             [:br] "Joe Odhiambo"]]
-          [:a.primary.button {:href "https://www.kudoboard.com/boards/Dm8efC7E"} "Leave a message"]
-          [:img {:src "img/header.png"}]]
+          [:a.message.primary.button {:href "https://www.kudoboard.com/boards/Dm8efC7E"} "Leave a message"]
+          [:img.joe {:src "img/header.png"}]
+          [:div.ctas.mobile
+            [:a.button.secondary {:href "https://www.kudoboard.com/boards/Dm8efC7E"} "Leave a message"]
+            [:a.button.primary {:href "https://secure.changa.co.ke/myweb/share/48583"} "Make a contribution"]]]
         [:div#memorials.section.section--navy
           [:h2.title.playfair.white.no-bot "Memorial services"]
           [:p.white "We lovingly remember Joseph Otieno Odhiambo, ja Asembo Kanyikela, to acknowledge and share both our joy in the gift that his life was to us, and the grief that his sudden and unexpected passing brings. Joe, or Joese as he was fondly known, was a pillar of support not only to his family but to the entire clan. He was a kind, gentle, generous and emphatic soul."]
-          [:a.watch {:style "width: 310px;"
-                     :href "/memorial-programme.pdf"} "Download programmes" [:img.play {:style "width: 20px"
-                                                                                                                                          :src "img/download.svg"}]]
+          [:a.watch {:style "width: 280px;"
+                     :href "/memorial-programme.pdf"} "Download programmes" [:img.play {:style "width: 20px" :src "img/download.svg"}]]
           [:br] 
           [:br] 
           [:br] 
