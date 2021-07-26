@@ -29,6 +29,7 @@
           (css  [:* {:box-sizing "border-box"}]
                 [:div {:display "flex"}]
                 [:a {:cursor "pointer"}]
+                [:html {:scroll-behavior "smooth"}]
                 [:html :body {:margin "0px"
                        :padding "0px"
                        :font-family "Open Sans, sans-serif"
