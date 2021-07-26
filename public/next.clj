@@ -316,7 +316,7 @@
                 [:p "Joe was an entrepreneur at heart with brilliant business acumen and numerous business interests. His love for farming is evidenced by the many eucalyptus and moringa trees he planted in the ancestral home in Asembo."]]
             [:div.chapter
                 [:img {:src "img/family.png"}]
-                [:div.subtitle "Education & Interests"]
+                [:div.subtitle "Interests"]
                 [:p "Joe was a dedicated hockey player\u003B his late brother Sam described him as the best left wing Kenya ever produced. Joe played on the Kenyan national hockey team in the 70s and continued to play exceptionally well in local leagues in South Africa, up to the time of his demise."]
                 [:p "His general interest in all sports was astounding. He was an ardent football and rugby fan and enjoyed physical activities, even competing in a number of marathons."]
                 [:p "Although Joe sang off pitch, he loved Lingala and Luo music and had the latest collection of music stashed all over the house and cars. His favourite musicians were Franco and Musa Juma. He loved \"Nyar Ahero\" song by Musa Jakadala which was played for him until his last day on earth."]]]]
