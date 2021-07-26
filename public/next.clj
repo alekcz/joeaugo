@@ -17,6 +17,7 @@
         [:title "Joe Odhiambo - In Memoriam"]
         [:meta {:charset "utf-8"}]
         [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
+        [:link {:rel "shortcut icon" :type "image/png" :href "/favicon.png"}]
         [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge"}]
         [:link {:rel "preconnect" :href "https://fonts.googleapis.com"}]
         [:link {:rel "preconnect" :href "https://fonts.gstatic.com" :crossorigin nil}]
