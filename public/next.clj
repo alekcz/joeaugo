@@ -225,11 +225,17 @@
                          :padding "40px 10vw 60px 10vw"
                          :justify-content "flex-end"}]
               [:img.joe {:top "40px"
-                      :width "40vw"
-                      :right "30vw"
+                      :width "50vw"
+                      :right "25vw"
                       :border-radius "100%"}]
               [:a.message.primary {:display "none"}]
-              [:.mobile {:display "flex"}]))]]
+              [:.mobile {:display "flex"}]))
+          (css
+            (at-media {:max-width (px 400)}
+              [:img.joe {:top "40px"
+                      :width "80vw"
+                      :right "10vw"
+                      :border-radius "100%"}]))]]
       [:body 
         [:div.hero 
           [:header 
