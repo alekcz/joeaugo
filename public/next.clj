@@ -203,7 +203,7 @@
             [:div.filler]
             [:a.menu {:href "#memorials"} "Memorials"]
             [:a.menu {:href "#gallery"} "Gallery"]
-            [:a.menu {:href "#stories"} "Biography"]
+            [:a.menu {:href "#biography"} "Biography"]
             [:div.filler]
             [:a.button.menu.primary {:href "https://secure.changa.co.ke/myweb/share/48583"} "Contribute"]]
           [:br] 
@@ -257,7 +257,7 @@
             (for [n (range 8)]
               [:div.image {:style (bg (inc n))}])
             [:div.holder]]]
-        [:div#stories.section.section--family
+        [:div#biography.section.section--family
           [:div.fade
             [:div.subtitle "1961 - 2021"]
             [:h3.title.playfair "A life well lived"]]
