@@ -1,0 +1,1 @@
+// var macyInstance = Macy({container: '#chapters',columns: 2,mobileFirst: true});
