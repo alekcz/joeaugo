@@ -40,7 +40,7 @@
                        :font-size "18px"}]
                 [:.playfair {:font-family "Playfair Display, serif"
                              :font-weight "400"}]
-                [:h1 {:font-size "88px" :margin-top "0px" :text-align "left" :color weib :margin-bottom "40px"}]
+                [:h1 {:font-size "50px" :margin-top "0px" :text-align "left" :color white :margin-bottom "40px"}]
                 [:.subtitle {:color accent
                              :font-weight "700"
                              :margin "12px 0"
@@ -53,13 +53,16 @@
                 [:span {:margin-bottom "2px"}]
                 [:.word-mark {:text-transform "uppercase"
                               :font-weight "700"}]
-                [:.hero  {:background "linear-gradient(130.37deg, #C9DAE2 26.33%, #F1FAFF 71.25%)"
-                         :height "700px"
-                         :padding "90px 10vw"
-                         :display "flex"
-                         :position "relative"
-                         :flex-direction "column"
-                         :justify-content "center"}
+                [:.hero  {:background-repeat "no-repeat"
+                          :background-image "linear-gradient(181.48deg, rgba(0, 0, 0, 0.15) 19.2%, rgba(0, 0, 0, 0.65) 90.35%), url(img/hero.png)"
+                          :background-position "center top"
+                          :background-size "cover"
+                          :height "700px"
+                          :padding "90px 10vw"
+                          :display "flex"
+                          :position "relative"
+                          :flex-direction "column"
+                          :justify-content "flex-end"}
                   [:div {:display "flex"}]
                   [:img {:height "auto"
                          :width "37vw"
@@ -79,7 +82,7 @@
                           :align-items "center"
                           :margin "5px 10px"
                           :font-weight "700"
-                          :color weib
+                          :color white
                           :text-decoration "none"}]
                 [:.menu:hover {:text-decoration "underline"}]
                 [:.filler {:flex-grow "9999"}]
@@ -220,10 +223,9 @@
                                   :min-height "200px"}] 
               [:.fade {:padding "0px 00vw 20px 10vw"}]
               [:a.watch {:width "240px" :font-size "14px"}]
-              [:.hero  {:background "linear-gradient(130.37deg, #C9DAE2 26.33%, #F1FAFF 71.25%)"
-                         :height "600px"
-                         :padding "40px 10vw 60px 10vw"
-                         :justify-content "flex-end"}]
+              [:.hero  {:height "260px"
+                        :padding "40px 10vw 0px 10vw"
+                        :justify-content "flex-end"}]
               [:img.joe {:top "40px"
                       :width "50vw"
                       :right "25vw"
@@ -255,7 +257,6 @@
             [:h1.playfair "In Loving Memory"
             [:br] "Joe Odhiambo"]]
           [:a.message.primary.button {:href "https://www.kudoboard.com/boards/Dm8efC7E"} "Leave a message"]
-          [:img.joe {:src "img/header.png"}]
           [:div.ctas.mobile
             [:a.button.secondary {:href "https://www.kudoboard.com/boards/Dm8efC7E"} "Leave a message"]
             [:a.button.primary {:href "https://secure.changa.co.ke/myweb/share/48583"} "Make a contribution"]]]
