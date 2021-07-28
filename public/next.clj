@@ -366,7 +366,7 @@
                 [:p "In South Africa, Joe had an illustrious career; serving as a lecturer at the prestigious University of the Witwatersrand where he took a particular interest in mentoring young graduates and his staff members. He also worked as a Senior Project Manager at the giant oil company, SASOL"]
                 [:p "Because of his exceptional leadership qualities, Joe was appointed the Chief Executive Officer of Agrément South Africa, an entity of the Department of Public Works, and this was a position he held for more than 12 years until the time of his passing."]]
             [:div.chapter
-                [:img {:src "img/family.png"}]
+                [:img {:src "img/joe34.jpg"}]
                 [:div.subtitle "Entrepreneurship"]
                 [:p "Joe was an entrepreneur at heart\u003B he had brilliant business acumen and had a number of business interests which he planned to focus on upon retirement. His love for farming is evidenced by the many eucalyptus and moringa trees he planted in the ancestral home in Asembo."]]
             [:div.chapter
@@ -375,7 +375,7 @@
                 [:p "Joe was a skilled and dedicated hockey player and was selected to play for the Kenyan national team. His late brother Sam described him as the best left-wing Kenya ever produced. He continued to play exceptionally well in local leagues in South Africa."]
                 [:p "His general interest in all sports was astounding. He was an ardent football and rugby fan\u003B when he was watching sports, the quiet Joe would transform into a rowdy fan, at times even kicking the table in his excitement and shouting “Come on Joe!” He always enjoyed physical activities, even competing in a number of marathons."]]
             [:div.chapter
-                [:img {:src "img/family.png"}]
+                [:img {:src "img/joe44.jpg"}]
                 [:div.subtitle "Music"]
                 [:p "Although Joe sang off pitch, he loved Lingala and Luo music and had the latest collection of music stashed all over the house and cars. His favourite musicians were Franco and Musa Juma. He loved \"Nyar Ahero\" song by Musa Jakadala which was played for him until his last day on earth."]]
             [:div.chapter
