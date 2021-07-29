@@ -296,13 +296,13 @@
               [:br] "Program Director: Protus Seda"]
               [:a.watch {:href "https://www.youtube.com/watch?v=LrNO0UHHDjU&ab_channel=GraphicExposure"} "Watch Livestream" [:img.play {:src "img/play.svg"}]]]]
           [:div.stream
-            [:a {:src "https://www.youtube.com/channel/UCO_CFevOouGCB8E4fnPEBzg"}
+            [:a {:src "http://youtu.be/5T6b5OHp4bM"}
               [:img {:src "img/stream1.png"}]]
             [:div.aside  
               [:div.subtitle "Nairobi, Kenya (12:00 PM - 29th July 2021)"]
               [:p.white "Memorial Service: All Saints Cathedral"
               [:br] "Program Director: Max Muniafu"]
-              [:a.watch {:href "https://www.youtube.com/watch?v=LrNO0UHHDjU&ab_channel=GraphicExposure"} "Watch Livestream" [:img.play {:src "img/play.svg"}]]]]
+              [:a.watch {:href "http://youtu.be/5T6b5OHp4bM"} "Watch Livestream" [:img.play {:src "img/play.svg"}]]]]
           [:div.stream
             [:a {:src "https://www.youtube.com/channel/UCO_CFevOouGCB8E4fnPEBzg"}
               [:img {:src "img/stream2.png"}]]
