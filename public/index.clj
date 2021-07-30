@@ -304,14 +304,14 @@
               [:br] "Program Director: Max Muniafu"]
               [:a.watch {:href "http://youtu.be/5T6b5OHp4bM"} "Watch Livestream" [:img.play {:src "img/play.svg"}]]]]
           [:div.stream
-            [:a {:href "https://www.youtube.com/channel/UCO_CFevOouGCB8E4fnPEBzg"}
+            [:a {:href "http://youtu.be/qRwpim-zpXQ"}
               [:img {:src "img/stream2.png"}]]
             [:div.aside  
               [:div.subtitle "Asembo Kanyikela, Kenya (08:30 AM - 31st July 2021)"]
               [:p.white "Funeral Service: Asembo Kanyikela (next to Siger School)"
               [:br] "Master of Ceremony: Saul Sewe"
               [:br] "Officiating: Anglican Church of Kenya Bondo Diocese"]
-              [:a.watch {:href "https://www.youtube.com/watch?v=LrNO0UHHDjU&ab_channel=GraphicExposure"} "Watch Livestream" [:img.play {:src "img/play.svg"}]]]]]
+              [:a.watch {:href "http://youtu.be/qRwpim-zpXQ"} "Watch Livestream" [:img.play {:src "img/play.svg"}]]]]]
         [:div#gallery.section.section--baby
           [:div.subtitle "Photo Gallery"]
           [:h2.title.playfair "Worth 1000 Words"]
