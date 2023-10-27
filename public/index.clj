@@ -411,4 +411,5 @@
         [:footer "1961 - 2021"]
         [:script {:src "/script.js"}]]]))
 
-(pcp/response 200 resp "text/html")            
+;; (pcp/response 200 resp "text/html")            
+(pcp/response 200 "pew pew" "text/plain")   
